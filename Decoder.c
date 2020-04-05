@@ -1,3 +1,4 @@
+
 //This is code reader program
 
 #include<stdio.h>
@@ -101,11 +102,13 @@ main()
     if(fp==NULL)
     {
         printf("File not found");
+        getch();
         exit(1);
     }
     if(fp2==NULL)
     {
         printf("File could not be found");
+        getch();
         exit(1);
     }
     //date=getw(fp3);
@@ -809,6 +812,7 @@ main()
         printf("%c",store);
        // w[i]=store2+id;
     }
+    getch();
     setfgcolor(black);
     //fclose(fp);
     printf("\n\n\n\n");
